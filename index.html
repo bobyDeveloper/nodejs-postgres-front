@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>
+            Consumo de REST-API de Videojuegos
+        </p>
+
+        <div>
+            <label>Name</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label>Company</label>
+            <input type="text" id="company">
+        </div>
+        <div>
+            <label>Precio</label>
+            <input type="text" id="precio">
+        </div>
+        <div>
+            <label>Country</label>
+            <input type="text" id="country">
+        </div>
+        <div>
+            <label>Calificacion</label>
+            <input type="text" id="calificación">
+        </div>
+        <div>
+            <label>Dispositivo</label>
+            <input type="text" id="dispositivo">
+        </div>
+        <div>
+            <label>Dificultad</label>
+            <input type="text" id="dificultad">
+        </div>
+        <div>
+            <label>Categoria</label>
+            <input type="text" id="categoria">
+        </div>
+        <div>
+            <label>Lanzamiento</label>
+            <input type="text" id="lanzamiento">
+        </div>
+        <div>
+            <label>Fundation</label>
+            <input type="text" id="fundation">
+        </div>
+
+        <button onclick="postVideogames()"> POST VIDEOJUEGOS</button>
+
+        <button onclick="getVideogames()"> GET VIDEOJUEGOS</button>
+
+    <div id="resultado"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="callrestapi.js"></script>
+</body>
+</html>
