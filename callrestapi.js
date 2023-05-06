@@ -15,7 +15,7 @@ function postVideogames() {
     var myVersion = $('#version').val();
     var myLanzamiento = $('#lanzamiento').val();
 
-    var myteam = {
+    var myvideogame = {
         name: myName,
         company: myCompany,
         precio: myPrecio,
@@ -38,7 +38,7 @@ function postVideogames() {
             console.log(data);
             $('#resultado').html(JSON.stringify(data.videogame));
         },
-        data: JSON.stringify(myteam)
+        data: JSON.stringify(myvideogame)
     });
 }
 function getVideogames() {
@@ -65,7 +65,7 @@ function getVideogames() {
                                         '<td>' + item.dificultad + '</td>' +
                                         '<td>' + item.categoria + '</td>' +
                                         '<td>' + item.version + '</td>' +
-                                        '<td>' + item.lanzamiento + '</td>' +
+                                        '<td><img src="' + item.fundation + '" width="100" height="70"></td>' +
                                     '</tr>'                                     
             });
             htmlTableVideogames += '</table>';
